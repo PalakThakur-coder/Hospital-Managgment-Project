@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Hospital</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+	<servlet-name>AddPatient</servlet-name>
+	<servlet-class>Recptionist.AddPatient</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AddPatient</servlet-name>
+	<url-pattern>/AddPatient</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>AdminRegister</servlet-name>
+	<servlet-class>Admin.AdminRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AdminRegister</servlet-name>
+	<url-pattern>/AdminRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>AdminLogin</servlet-name>
+	<servlet-class>Admin.AdminLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AdminLogin</servlet-name>
+	<url-pattern>/AdminLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>DoctorRegister</servlet-name>
+	<servlet-class>Doctor.DoctorRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>DoctorRegister</servlet-name>
+	<url-pattern>/DoctorRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>DoctorLogin</servlet-name>
+	<servlet-class>Doctor.DoctorLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>DoctorLogin</servlet-name>
+	<url-pattern>/DoctorLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>RecpRegister</servlet-name>
+	<servlet-class>Recptionist.RecpRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>RecpRegister</servlet-name>
+	<url-pattern>/RecpRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>RecpLogin</servlet-name>
+	<servlet-class>Recptionist.RecpLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>RecpLogin</servlet-name>
+	<url-pattern>/RecpLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>updatePatient</servlet-name>
+	<servlet-class>Recptionist.updatePatient</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>updatePatient</servlet-name>
+	<url-pattern>/updatePatient</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>AddTest</servlet-name>
+	<servlet-class>Admin.AddTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AddTest</servlet-name>
+	<url-pattern>/AddTest</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>BillServlet</servlet-name>
+	<servlet-class>Bill.BillServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>BillServlet</servlet-name>
+	<url-pattern>/BillServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>AddDoctor</servlet-name>
+	<servlet-class>Admin.AddDoctor</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AddDoctor</servlet-name>
+	<url-pattern>/AddDoctor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>AddRecp</servlet-name>
+	<servlet-class>Admin.AddRecp</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AddRecp</servlet-name>
+	<url-pattern>/AddRecp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>DoctorSlip</servlet-name>
+	<servlet-class>Doctor.DoctorSlip</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>DoctorSlip</servlet-name>
+	<url-pattern>/DoctorSlip</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>UserRegister</servlet-name>
+	<servlet-class>User.UserRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>UserRegister</servlet-name>
+	<url-pattern>/UserRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>UserLogin</servlet-name>
+	<servlet-class>User.UserLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>UserLogin</servlet-name>
+	<url-pattern>/UserLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>AddOnlinePatient</servlet-name>
+	<servlet-class>User.AddOnlinePatient</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AddOnlinePatient</servlet-name>
+	<url-pattern>/AddOnlinePatient</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>OfflineSlip</servlet-name>
+	<servlet-class>Slips.OfflineSlip</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>OfflineSlip</servlet-name>
+	<url-pattern>/OfflineSlip</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>OnlineSlip</servlet-name>
+	<servlet-class>Slips.OnlineSlip</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>OnlineSlip</servlet-name>
+	<url-pattern>/OnlineSlip</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>AdminNewPass</servlet-name>
+	<servlet-class>Admin.AdminNewPass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AdminNewPass</servlet-name>
+	<url-pattern>/AdminNewPass</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>Admin.Logout</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>RecpLogout</servlet-name>
+	<servlet-class>Recptionist.RecpLogout</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>RecpLogout</servlet-name>
+	<url-pattern>/RecpLogout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>RecpNewPass</servlet-name>
+	<servlet-class>Recptionist.RecpNewPass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>RecpNewPass</servlet-name>
+	<url-pattern>/RecpNewPass</url-pattern>
+	</servlet-mapping>
+		<servlet>
+	<servlet-name>DoctorLogout</servlet-name>
+	<servlet-class>Doctor.DoctorLogout</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>DoctorLogout</servlet-name>
+	<url-pattern>/DoctorLogout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>DoctorNewPass</servlet-name>
+	<servlet-class>Doctor.RecpNewPass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>DoctorNewPass</servlet-name>
+	<url-pattern>/DoctorNewPass</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>AddIpdPatient</servlet-name>
+	<servlet-class>Recptionist.AddIpdPatient</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>AddIpdPatient</servlet-name>
+	<url-pattern>/AddIpdPatient</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>IpdSlip</servlet-name>
+	<servlet-class>Slips.IpdSlip</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>IpdSlip</servlet-name>
+	<url-pattern>/IpdSlip</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>UpdateDoctor</servlet-name>
+	<servlet-class>Admin.UpdateDoctor</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>UpdateDoctor</servlet-name>
+	<url-pattern>/UpdateDoctor</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>UpdateRecp</servlet-name>
+	<servlet-class>Admin.UpdateRecp</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>UpdateRecp</servlet-name>
+	<url-pattern>/UpdateRecp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>UpdateTest</servlet-name>
+	<servlet-class>Admin.UpdateTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>UpdateTest</servlet-name>
+	<url-pattern>/UpdateTest</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>DischargePatient</servlet-name>
+	<servlet-class>Recptionist.DischargePatient</servlet-class>
+	</servlet>
+	
+	<servlet-mapping> 
+	<servlet-name>DischargePatient</servlet-name>
+	<url-pattern>/DischargePatient</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

@@ -1,0 +1,145 @@
+@charset "ISO-8859-1";
+/* Styles for screen */
+body {
+    font-family: Arial, sans-serif;
+}
+.slip-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure the background doesn't overflow */
+}
+.slip-container::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 60%;
+    min-height: 60%;
+    width: 200px;
+    height: auto;
+    background-image: url('../img/lifelogo.jpeg'); /* Path to your watermark/logo image */
+    background-size: contain; /* Cover the entire area */
+    background-repeat: no-repeat; /* No repetition */
+    opacity: 0.1; /* Adjust the opacity of the background image */
+    z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+.phone-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 12px;
+}
+.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 12px;
+}
+.slip-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.slip-header img {
+    height: 80px;
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.hospital-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.hospital-info h2 {
+    margin: 5px 0;
+    color: red; /* Set the color to red */
+    text-shadow: 2px 2px yellow; /* Add a yellow shadow */
+}
+.hospital-info h2 {
+    margin: 5px 0;
+}
+.hospital-info p {
+    margin: 3px 0;
+}
+
+.head {
+    font-weight: bold;
+}
+
+/* Style for the dotted line */
+.fill::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+    margin-top: 2px;
+}
+
+.print-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.slip-content1,
+.slip-content2,
+.slip-content3 {
+    display: flex;
+    justify-content: space-between;
+}
+.slip-content1 p,
+.slip-content2 p,
+.slip-content3 p {
+    margin: 0 5px; /* Adjust the margin to your preference */
+}
+.head {
+    font-weight: bold;
+}
+.valid-text {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.button {
+    background-color: blue;
+    color: #fff;
+}
+
+/* Styles for print */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .slip-container,
+    .slip-container * {
+        visibility: visible;
+    }
+    .slip-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10;
+        margin: 0;
+    }
+    .head {
+        font-weight: bold;
+    }
+}

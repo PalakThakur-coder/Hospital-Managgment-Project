@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('img/colage1.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .slip-details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-section {
+        flex: 2;
+    }
+
+    .right-section {
+        flex: 1;
+    }
+
+    .slip-details p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    hr {
+        border: 1px solid #ccc;
+        margin: 20px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /* Add additional styles for prescription fields here */
+
