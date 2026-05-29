@@ -27,6 +27,6 @@ A web-based Hospital Management System developed to manage IPD/OPD patient recor
 4. Import the `hospital_db.sql` file.
 5. Run the project on Tomcat Server.
 
-## 📸 Screenshots
+
 (Add project screenshots here)
 # Hospital-Managgment-Project
